@@ -17,3 +17,34 @@ let num = 1
  
 
  console.log(booleanValue)
+
+
+
+//  ********Operations*******
+
+let val  = 9
+
+let value = -val
+
+console.log(value)
+
+
+let str = "hello"
+ let str1 = " Rishikesh"
+
+ let str3=str1 + str
+
+ console.log(str3,str1+str)
+
+
+ console.log("4" + 7)
+
+
+ console.log(3+4+"78")
+
+
+ let gameCounter = 400
+
+ gameCounter++
+
+ console.log(gameCounter)
