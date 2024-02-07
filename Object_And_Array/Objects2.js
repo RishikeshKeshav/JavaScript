@@ -65,3 +65,18 @@ console.log(users[1].id)
 console.log(Object.keys(user1))
 console.log(Object.values(user1))
 console.log(Object.entries(user1))
+
+
+const course = {
+    coursename:"english",
+    teacher:"myself",
+    term:"spring",
+    fees:"2700"
+}
+
+const {coursename : name} = course
+
+// const {coursename} = course
+// console.log(coursename)
+
+console.log(name)
