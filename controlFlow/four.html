@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: palevioletred;">
+    <ul class="language"  style="background-color: skyblue; color: blueviolet;"> Groceries
+        <li>Milk</li>
+        <li>eggs</li>
+        <li>water</li>
+        <li>shampoo</li>
+    </ul>
+</body>
+<script>
+    function addgrocery(grocery){
+
+        const li  = document.createElement('li')
+
+        li.innerHTML = `${grocery}`
+
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addgrocery("wheat")
+    addgrocery("charger")
+
+    function addOptimizeWay(grocery){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(grocery))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimizeWay("tootthpaste")
+
+    const second = document.querySelector("li:nth-child(2)")
+    // second.innerHTML="dal"
+
+  const newli = document.createElement('li')
+  newli.textContent="mojo"
+  second.replaceWith(newli)
+
+  second.remove
+</script>
+</html>
