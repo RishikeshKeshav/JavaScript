@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body style="background-color: orange;">
+    <form class="form">
+        <label for="guessField" style="color: aliceblue; align-content: center; border: 3px solid;margin-bottom: 20px;" id="guessField">Guess the number</label>
+        <br>
+        <input type="text" class="guessNumber" id="guessNumber" placeholder="Enter your Number" style="margin: 3px solid; border: 3px solid greenyellow;">
+        <br>
+        <input type="submit" class="submitNumber" id="submitNumber">
+    </form>
+    <div class="results" style="background-color: bisque;">
+        <p>Previous guesses<span class="guesses"></span></p>
+        <p>Guesses remianing<span class="lastGuesses"></span></p>
+   <p class="lowOrHi"></p>
+    </div>
 </body>
+<script src="code.js">
+
+</script>
 </html>
