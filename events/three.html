@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rishikesh page 3</h1>
+    <button id="start"> Start </button>
+    <button id="stop"> Stop </button>
+</body>
+<script>
+let intervalVal = null;
+ const startButton = function(){
+    const ans = function(){
+        console.log("rishikesh",Date.now())
+    }
+   intervalVal = setInterval(ans,1000)
+}
+document.querySelector('#start').addEventListener('click',startButton)
+
+
+const stopButton = function(){
+    clearInterval(intervalVal);
+}
+
+document.querySelector('#stop').addEventListener('click',stopButton)
+</script>
+</html>

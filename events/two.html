@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rishikesh Andhare</h1>
+    <button id="stop"> stop</button>
+    
+</body>
+<script>
+    const val = function(){
+        console.log("rishikesh andhare")
+    }
+    setTimeout(val,1000)
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "this is async function calls"
+    }
+   const changeme =  setTimeout(changeText,4000)
+
+   document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme)
+        console.log("message changed")
+   })
+</script>
+</html>
